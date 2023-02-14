@@ -14,8 +14,8 @@ var products = [
 
 
 
-var inputNome = document.querySelector("#name1");
-name1.addEventListener("keypress", function(e) {
+var inputNome = document.querySelector("#formInput");
+formInput.addEventListener("keypress", function(e) {
     var keyCode = (e.keyCode ? e.keyCode : e.which);
   
   if (keyCode > 47 && keyCode < 58) {
@@ -29,7 +29,7 @@ function showOrder(){
       var quantities  = document.getElementsByName("quantity"); // Recebe todos os elementos com nome quantity no HTML
       var output      = document.getElementById("output");
       var result      = 0;
-      output.innerHTML = `Caro <strong>${name1.value}</strong></br></br></br>
+      output.innerHTML = `Caro <strong>${name1.value}</strong></br>
                           Seguem os dados do seu pedido. </br></br>
                           O seu pedido e: </br></br>`;
                           
@@ -40,8 +40,8 @@ function showOrder(){
             style: 'currency',
             currency: 'BRL',
           });
-
-          if(input.value >= 1){
+ 
+          if(input.value >= 1){ 
               output.innerHTML += `• Prato: = ${products[id-1].name} - 
               Preço Unitario: ${formatter.format(products[id-1].price)} 
               Quantidade: ${input.value} </br>`;
