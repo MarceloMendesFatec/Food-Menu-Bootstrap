@@ -15,10 +15,10 @@
    
 
 
-<div class="container-lg shadow-lg p-0 pb-2">
+<div class="container-xxl shadow-lg p-0 pb-2 ">
    
    <!--NavBar Content-->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary text-center">
+    <nav class="navbar navbar-expand-md bg-body-tertiary text-center">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">Food Menu</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -44,7 +44,7 @@
       </nav>
 
       <!--Carrousel -->
-      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+      <div id="carouselExampleAutoplaying" class="carousel slide d-none d-md-block" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img src="./assets/banner11.jpg" class="w-100"   alt="...">
@@ -78,8 +78,8 @@
        </div>
   
         <!--CARDS Principal START-->
-        <div class=" d-flex row  justify-content-around mt-5 mb-4 text-center ">
-              <div class="card p-0 shadow-lg" style="width: 18rem;">
+        <div class=" d-flex row  justify-content-around mt-5 mb-4  text-center ">
+              <div class=" card p-0 shadow-lg mb-2" style="width: 18rem;">
                 <img src="./assets/bife.jpg" class="card-img-top rounded" alt="Bife com Batata">
                 <div class="card-body p-0 m-0">
                   <h5 class="card-title m-0">Bife com Batata</h5>
@@ -95,14 +95,14 @@
                 </div>
               </div>
   
-              <div class="card p-0 shadow-lg" style="width: 18rem;">
+              <div class="card p-0 shadow-lg mb-2" style="width: 18rem;">
                 <img src="./assets/coxa.jpg" class="card-img-top rounded" alt="Bife com Batata">
                 <div class="card-body p-0 m-0">
                   <h5 class="card-title m-0">Coxa de Frango Crocante</h5>
                   <p class="card-text text-success fw-bold">R$ 25,00</p>
                 </div>
-                <div class="card-body p-0 shadow-lg">
-                  <div class="quantity buttons_added mb-3">
+                <div class="card-body p-0">
+                  <div class="quantity buttons_added  mb-3">
                     <input type="button" value="-" class="minus">
                     <input type="number" step="1" min="0" max="" id="2" name="quantity" value="0" title="Qty"
                         class="input-text qty text" size="4" pattern="" inputmode="">
@@ -111,13 +111,13 @@
                 </div>
               </div>
   
-              <div class="card p-0 shadow-lg" style="width: 18rem;">
+              <div class="card p-0 shadow-lg mb-2" style="width: 18rem;">
                 <img src="./assets/panela.jpg" class="card-img-top rounded" alt="Bife com Batata">
                 <div class="card-body p-0 m-0">
                   <h5 class="card-title m-0">Carne de Panela</h5>
                   <p class="card-text text-success fw-bold">R$ 22,00</p>
                 </div>
-                <div class="card-body p-0">
+                <div class="card-body p-0 mb-2">
                   <div class="quantity buttons_added mb-3">
                     <input type="button" value="-" class="minus">
                     <input type="number" step="1" min="0" max="" id="3" name="quantity" value="0" title="Qty"
@@ -140,7 +140,7 @@
          </div>
         <!--CARDS acompanhamentos START-->
           <div class=" d-flex row  justify-content-around mt-5 mb-4 text-center ">
-          <div class="card p-0 shadow-lg" style="width: 18rem;">
+          <div class="card p-0 shadow-lg mb-2" style="width: 18rem;">
             <img src="./assets/farofa.jpg" class="card-img-top rounded" alt="Bife com Batata">
             <div class="card-body p-0 m-0">
               <h5 class="card-title m-0">Farofa</h5>
@@ -156,7 +156,7 @@
             </div>
           </div>
   
-          <div class="card p-0 shadow-lg" style="width: 18rem;">
+          <div class="card p-0 shadow-lg mb-2" style="width: 18rem;">
             <img src="./assets/salad.jpg" class="card-img-top rounded" alt="Bife com Batata">
             <div class="card-body p-0 m-0">
               <h5 class="card-title m-0">Salada</h5>
@@ -172,7 +172,7 @@
             </div>
           </div>
   
-          <div class="card p-0 shadow-lg" style="width: 18rem;">
+          <div class="card p-0 shadow-lg mb-2" style="width: 18rem;">
             <img src="./assets/torresmo.jpg" class="card-img-top rounded" alt="Bife com Batata">
             <div class="card-body p-0 m-0">
               <h5 class="card-title m-0">Torresmo</h5>
@@ -194,18 +194,18 @@
       <!--FORM-->
       <div class="container bg-secondary bg-opacity-10 border-1 border border-secondary rounded mt-5  w-75 ">
         <div class="fw-medium text-center fs-3"> Dados pessoais</div>
-          <div class="mb-3 mt-3 col-8 offset-2">
-            <input type="text" class="form-control " id="name1" placeholder="Digite seu nome">
+          <div class="mb-3 mt-3 col-sm-8 offset-sm-2">
+            <input type="text" class="form-control  " id="name1" placeholder="Digite seu nome">
           </div>
-          <div class="mb-3 col-8 offset-2">
+          <div class="mb-3 col-sm-8 offset-sm-2">
             <input type="text" class="form-control" id="phone" placeholder="Digite seu Telefone">
           </div>
-          <div class="mb-3 col-8 offset-2">
+          <div class="mb-3 col-sm-8 offset-sm-2">
             <input type="email" class="form-control" id="formInput2" placeholder="Digite seu email">
           </div>
 
           <!--Modal button-->
-          <button class="btn btn-primary col-4 offset-4 mt-2 mb-2 " data-bs-toggle="modal" data-bs-target="#staticBackdrop"  onclick="showOrder()"> Calcular Pedido</button>
+          <button class="btn btn-primary col-10 offset-1  col-sm-4 offset-sm-4 mt-2 mb-2 " data-bs-toggle="modal" data-bs-target="#staticBackdrop"  onclick="showOrder()"> Calcular Pedido</button>
 
             <!-- Modal -->
                   <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
